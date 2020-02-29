@@ -14,7 +14,7 @@ Wissensdatenbank bestehend aus Fakten und Regel. Diese kann abgefragt werden dur
 
 Ein erstes Prolog-Programm, bestehend aus den
 folgenden drei Beispiel-Fakten in der
-Wissensdatenbank\_:
+Wissensdatenbank:
 
 ```prolog
 bigger(elephant, horse).
@@ -116,33 +116,33 @@ SWI-Prolog enthält zahlreiche eingebaute Prädikate. Diese sind in derOnline Do
 
 Beispiele:
 
-1. Eine Programm-Datei kompilieren: `consult/1`
+1.  Eine Programm-Datei kompilieren: `consult/1`
 
-   ?- consult(bigger).
-   % bigger.pl compiled 0.00 sec, 12 clauses true.
-   ?-
+        ?- consult(bigger).
+        % bigger.pl compiled 0.00 sec, 12 clauses true.
+        ?-
 
 Liest die Datei `bigger` oder `bigger.pl` ein. Gegebenenfalls muss davor mit `working_directory/2` das aktuelle Verzeichnis gesetzt werden.
 
-2. Argumente in die Konsole schreiben: `write/1`
+2.  Argumente in die Konsole schreiben: `write/1`
 
-   ?- write('hallo hslu').
-   hallo hslu
-   true.
+        ?- write('hallo hslu').
+        hallo hslu
+        true.
 
-3. Standard Input lesen: `read/1``
+3.  Standard Input lesen: `read/1`
 
-   ?- read(X), write(X).
-   |: 'aha, so geht das!'.
-   aha, so geht das!
-   X = 'aha, so geht das!'.
+        ?- read(X), write(X).
+        |: 'aha, so geht das!'.
+        aha, so geht das!
+        X = 'aha, so geht das!'.
 
 ## Prolog Queries
 
 Anfragen (Queries) sind Prädikate (oder Sequenzen von Prädikaten) gefolgt von einem Punkt. Diese werden beim Prolog-Prompt (`?-`) in der Konsole eingegeben und veranlassen das System zu antworten:
 
-?- is_bigger(elephant, dog). % query
-true .
+    ?- is_bigger(elephant, dog). % query
+    true .
 
 ## Wichtige Begriffe
 
@@ -153,7 +153,7 @@ true .
 Prolog-Programme bestehen aus Fakten und Regeln, die in der aktuellen Wissensdatenbank abgelegt sind.
 
 - _Fakten_ (facts) = Prädikate gefolgt von einem Punkt. Fakten sind typischerweise Grundterme (Prädikate ohne Variablen)
-- _Regeln_ (rules) bestehen aus einem Kopf (head) und einem Hauptteil (body), durch :- getrennt. Der Kopf einer Regel ist wahr,falls alle Ziele (Prädikate) im Hauptteil als wahr bewiesen werden können, z.B.:
+- _Regeln_ (rules) bestehen aus einem Kopf (head) und einem Hauptteil (body), durch `:-` getrennt. Der Kopf einer Regel ist wahr,falls alle Ziele (Prädikate) im Hauptteil als wahr bewiesen werden können, z.B.:
 
       grandfather(X, Y) :-        % head
       father(X, Z),               % body, goal 1
@@ -176,10 +176,8 @@ Ziele im Hauptteil werden durch `,` (Komma) abgetrennt und ganz am Schluss durch
 
 Zwei Regeln in der Wissensdatenbank:
 
-```swipl
-vertical(line(point(X,_), point(X,_))).
-horizontal(line(point(_,Y), point(_,Y))).
-```
+    vertical(line(point(X,_), point(X,_))).
+    horizontal(line(point(_,Y), point(_,Y))).
 
 Beispielabfragen:
 
@@ -451,18 +449,18 @@ Mit dem eingebauten Prädikat `op/3` können Prädikate als Operatoren deklar
 
 Ein paar Beispiele bereits vordefinierter Operatoren:
 
-| Präzedenz | Typ | Name                                              |
-| --------: | --- | ------------------------------------------------- |
-|      1200 | xfx | `-->`, `:-`                                       |
-|      1200 | fx  | `:-`, `?-`                                        |
-|      1100 | xfy | `;`, `|`                                          |
-|      1000 | xfy | `,`                                               |
-|       900 | fy  | `\+`                                              |
-|       700 | xfx | `<`, `=`, `=:=`, `=\=`, `is`, ...                 |
-|       500 | yfx | `+`, `-`, `/\`, `\/`, `xor`                       |
-|       400 | yfx | `*` , `/`, `//`, `rdiv`, `<<`, `>>`, `mod`, `rem` |
-|       200 | xfx | `**`                                              |
-|       200 | fy  | `+`, `-`, `\`                                     |
+| Präzedenz | Typ   | Name                                              |
+| --------: | ----- | ------------------------------------------------- |
+|      1200 | `xfx` | `-->`, `:-`                                       |
+|      1200 | `fx`  | `:-`, `?-`                                        |
+|      1100 | `xfy` | `;`, `|`                                          |
+|      1000 | `xfy` | `,`                                               |
+|       900 | `fy`  | `\+`                                              |
+|       700 | `xfx` | `<`, `=`, `=:=`, `=\=`, `is`, ...                 |
+|       500 | `yfx` | `+`, `-`, `/\`, `\/`, `xor`                       |
+|       400 | `yfx` | `*` , `/`, `//`, `rdiv`, `<<`, `>>`, `mod`, `rem` |
+|       200 | `xfx` | `**`                                              |
+|       200 | `fy`  | `+`, `-`, `\`                                     |
 
 Ganze Tabelle: http://www.swi-prolog.org/pldoc/man?predicate=op/3
 

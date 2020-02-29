@@ -1,4 +1,6 @@
-# Imperative Programmierung
+# SW01
+
+## Imperative Programmierung 1
 
 1. Charakterisieren Sie in eigenen Worten, wie imperative Programmierung funktioniert. Aus welchen Grundelementen sind imperative Programme aufgebaut? Wie werden derartige Programme ausgeführt, wie verläuft der Kontrollfluss?
 
@@ -13,7 +15,7 @@
 
 > Spezialisierung des imperativen Paradigmas, bietet Unterteilung von Programmen in Teilprogramme (= Prozedur, auch: Routine, Unterprogramm, Funktion).
 
-## Imperative Programmierung 2
+## Imperative Programmierung 2
 
 1. Was ist ein ADT?
 
@@ -33,7 +35,9 @@
 > – Sichtbarkeit:private,protected,public
 > – Exception-Handling:try,catch,finally,throw(s)
 
-# Prolog
+# SW02
+
+## Prolog 1
 
 1. Wie antwortet das Prolog-System in unserem
    Beispiel auf die Anfrage is_bigger(elephant,
@@ -47,7 +51,7 @@
    einer Zeile)
    > is_bigger(Y, X)
 
-Wie wird Prolog auf die folgenden Anfragen anworten?
+Wie wird Prolog auf die folgenden Anfragen antworten?
 
 1. ?- X=tom, X=pia.
    > false.
@@ -61,16 +65,16 @@ Wie wird Prolog auf die folgenden Anfragen anworten?
 
 Die letzte Anfrage _sollte_ gemäss Regeln `false` geben, aber aus Effizienzgründen wird dieser Check aber nicht standardmässig gemacht.
 
-# Prolog 2
+## Prolog 2
 
 1. Wie viele Lösungen für ein Kreuzworträtsel findet unser Programm grundsätzlich?
    > Eine Lösung.
 2. Unser Programm findet für das angegebene Kreuzworträtsel genau eine Lösung. Wie liesse sich das Kreuzworträtsel einfach erweitern, so dass es neu eine zweite Lösung findet? Wie müssten wir dazu das angegeben Programm erweitern? (Machen sie konkrete Vorschläge!)
-   > Indem wir mehr Wörter definieren, die ebenfalls an bestimmten Stellen passen würden. Zum Beispiel 'mist', 'most', 'must', 'meso', ...
+   > Indem wir mehr Wörter definieren, die ebenfalls an bestimmten Stellen passen würden. Zum Beispiel 'mist', 'most', 'must', ...
 3. Was würde Prolog antworten, wenn es für ein angegebenes Kreuzworträtsel gar keine Lösung gibt?
    > false.
 
-# Prolog 2.2
+## Prolog 3
 
 1. Wie können sie mit dem angegebenen Prädikat fak/2 herausfinden, was das X bei X! = 720 ist?
    > fak(X, 720).

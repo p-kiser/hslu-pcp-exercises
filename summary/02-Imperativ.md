@@ -49,7 +49,7 @@ Klassen haben definierte Zustände (Daten, Instanzvariablen) und Verhalten (Meth
 
 Mit der Definition von Klassen und Packages (hierarchischen Gruppen von Klassen) wurden auch Fragen der Sichtbarkeit relevant(er): Von wo aus kann auf was (Methode / Variable) zugegriffen werden?
 
-Java verwendet dafür eine vierstufige Sichtbarkeit, deklariert durch die vier Zugriffsmodifizierer
+Java verwendet dafür eine vierstufige Sichtbarkeit, deklariert durch die vier Zugriffsmodifizierer:
 
 - `private`
 - [`default`]

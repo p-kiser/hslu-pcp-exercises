@@ -237,7 +237,7 @@ Bekannteste Unter-Programmierparadigmen sind logische Programmierung (z.B. Prolo
 
 Die _logische Programmierung_ ist eine Spezialisierung des deklarativen Paradigmas. Das Programm besteht aus FAkten und Regeln, aus welchen auf Anfrage automatisch versucht wird, eine Lösungsaussage herzuleiten. Der Lösungsweg wird nicht angegeben.
 
-Logische Programmierung basiert auf mathematischer Logik (_Horn-Klauseln Resolution_). Bekannteste Sprachen sind Prolog und Datalog.
+Logische Programmierung basiert auf mathematischer Logik (_Horn-Klauseln Resolution_). Bekannteste Sprachen sind _Prolog_ und _Datalog_.
 
 ### Funktionale Programmierung
 
