@@ -9,7 +9,7 @@ Java basiert auf C und die Syntax und Semantik sind weitgehend identisch:
 - Gleiche Syntax und Semantik für die zentralen Kontrollstrukturen (if, if-else, for- & while-Schleifen)
 - Gleiche elementare Datentypen (int, char, float, ...)
 
-## Datentypen in C
+## Datentypen in C
 
 C kennt elementare Datentypen wie int, char oder double und die Datenstruktur Array. Zusammengesetzte Datentypen können mit Hilfe von Strukturen (`struct`) und Typendefinitionen (`typedef`) erzeugt werden.
 
@@ -45,14 +45,14 @@ ADT bieten Datenstrukturen und darauf klar definierte Operationen (resp. Funktio
 
 Klassen haben definierte Zustände (Daten, Instanzvariablen) und Verhalten (Methoden). Die Funktionen "hängen" direkt and den Daten. In diesem Sinne kann OO als eine Weiterentwicklung von ADTs verstanden werden.
 
-## Packages und Sichtbarkeit
+## Packages und Sichtbarkeit
 
 Mit der Definition von Klassen und Packages (hierarchischen Gruppen von Klassen) wurden auch Fragen der Sichtbarkeit relevant(er): Von wo aus kann auf was (Methode / Variable) zugegriffen werden?
 
 Java verwendet dafür eine vierstufige Sichtbarkeit, deklariert durch die vier Zugriffsmodifizierer:
 
 - `private`
-- [`default`]
+- `default`
 - `protected`
 - `public`
 
@@ -65,7 +65,7 @@ Konzepte:
 - Sichtbarkeit
 - Exception Handling
 
-### ADT Beispiel: Stack
+### ADT Beispiel: Stack
 
 Ein Stack ist eine Sammlung von Elementen mit bestimmter Struktur. Neue Elemente könnten hinzugefügt werden (Operation `push`), das zuletzt hinzugefügte Element kann abgefragt werden (`top`) und mit `pop` vom Stack entfernt werden.
 
@@ -141,7 +141,7 @@ element top(stack s) {
 Implementation von `pop(...)`:
 
 ```c
-// removes topelement from stack
+// removes top element from stack
 stack pop(stack s) {
   if (s.index > STACK_EMPTY_INDEX) {
     s.index--;
@@ -152,7 +152,7 @@ stack pop(stack s) {
 
 Bemerkungen:
 
-Strukturen werden in C als Werte (_ call by value_) übergeben. Wenn eine Referenz übergeben werden soll, muss das mit Pointern gemacht werden. Auf die Verwendung von Pointern und verketteten Listen wurde in diesem Beispiel der Einfachheit halber verzichtet. Aus dem gleichen Grund wurde int als Datentyp für die Elemente gewählt. Grundsätzlich hätte hier jeder beliebige Typ gewählt werden können.
+Strukturen werden in C als Werte (_call by value_) übergeben. Wenn eine Referenz übergeben werden soll, muss das mit Pointern gemacht werden. Auf die Verwendung von Pointern und verketteten Listen wurde in diesem Beispiel der Einfachheit halber verzichtet. Aus dem gleichen Grund wurde int als Datentyp für die Elemente gewählt. Grundsätzlich hätte hier jeder beliebige Typ gewählt werden können.
 
 ### Implementierung in Java
 

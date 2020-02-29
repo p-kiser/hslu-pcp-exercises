@@ -6,7 +6,7 @@ Zusätzlich existieren tausende weitere, spezialisierte Sprachen.
 
 ## Wichtige Begriffe
 
-## Programmiersprache
+## Programmiersprache
 
 Eine _Programmiersprache_ ist eine formal konstruierte Sprache, entworfen um Befehle an Maschinen, speziell Computer, zu übermitteln. Programmiersprachen werden eingesetzt, um Programme zu schreiben, welche das Verhalten von Maschinen kontrollieren oder welche Algorithmen beschreiben.
 
@@ -24,8 +24,6 @@ In der Berechenbarkeitstheorie spricht man von _Turing-Vollständigkeit_ (= univ
 
 Gemäss dieser Definition ist z.B. HTML keine Programmiersprache, SQL seit der Einführung von rekursiven Common-Table-Expression mit SQL 1999 aber schon.
 
-> TODO: Kenntnisse & Auswahl von Programmiersprachen
-
 ### Programmierparadigma
 
 Ein _Paradigma_ im Allgemeinen beschreibt ein (Denk-)Muster, eine grundlegende Denkweise oder Weltanschauung.
@@ -35,8 +33,6 @@ Programmierstil, eine bestimmt Art die Struktur
 und Elemente von Programmen aufzubauen.
 
 ![Paradigmenbaum](./img/paras.png)
-
-> TODO: Mit `dot` selber basteln.
 
 Fundamental ist vor allem die Unterscheidung in _imperative_ und _deklarative_ Programmiersprachen.
 
@@ -81,11 +77,11 @@ Programmierparadigma angehören. Programmierparadigmen sind eher komplementär a
 
 So ist beispielsweise Java zwar primär objektorientiert mit prozeduralen, modularen, ereignisorientierten und (seit Java 8) auch funktionalen Ansätzen.
 
-## Imperativ vs Deklarativ
+## Imperativ vs Deklarativ
 
 _Imperative_ Programmierung beschreibt primär das _Wie_:
 
-DIe Problemlösung (Berechnungslogik) wird schrittweise in Befehlen beschrieben: "Wie ist das Problem zu lösen?"
+Die Problemlösung (Berechnungslogik) wird schrittweise in Befehlen beschrieben: "Wie ist das Problem zu lösen?"
 
 Bespiel Kreis (imperativ):
 
@@ -102,11 +98,7 @@ Aufgabe: Zeichne einen Kreis.
 - **Imperativ**: Resultat einer 360 Grad Rotation um einen festen Mittelpunkt mit dem Zirkel
 - **Deklarativ**: Menge aller Punkte, die von einem vorgegebenen Punkt denselben Abstand hat.
 
-SORT:
-
-_Fun Fact_: Assembler ist _nicht_ strukturiert. Eine Anforderung strukturierte Sprachen, ist das es kein `GOTO` gibt.
-
-### Beispiel GCD
+### Beispiel GCD
 
 Aufgabe: Berechnung des grössten gemeinsamen Teilers (_greatest common divisor: GCD_) von zwei ganzen Zahlen gemäss dem euklidischen Algorithmus.
 
@@ -158,7 +150,7 @@ Aufruf in der Scheme-Konsole:
     > (gcd 42 35)
     7
 
-## Imperative Programmierung
+## Imperative Programmierung
 
 > imperare (lat) = befehlen, anordnen
 
