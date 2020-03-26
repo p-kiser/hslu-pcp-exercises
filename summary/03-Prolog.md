@@ -264,7 +264,7 @@ Typische Prolog-Standardprobleme sind:
 
 Ein paar davon werden hier kurz aufgezeigt.
 
-## Beispiel: Kreuzworträtsel
+### Beispiel: Kreuzworträtsel
 
 **Ausgangslage**:
 
@@ -330,7 +330,7 @@ false.
 
 ![Lösung Kreuzworträtsel](./img/crossol.png)
 
-## Beispiel: Karten färben
+### Beispiel: Karten färben
 
 **Ausgangslage**:
 

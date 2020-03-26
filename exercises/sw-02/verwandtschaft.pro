@@ -15,6 +15,10 @@ parent(tom, sue). parent(tom, jim).                                             
 mother(M,C) :- parent(M, C), female(M).
 father(F,C) :- parent(F, C), male(F).
 
+% ?- mother(X,jim).
+% X = tina 
+
+
 % b) sibling/2
 
 sibling(X, Y) :- parent(Z, X) , parent(Z, Y).
